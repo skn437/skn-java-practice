@@ -7,7 +7,7 @@ public class AudioBook extends Book {
   private int runtime;
 
   public AudioBook(String name, String title, int runtime) {
-    super(name, title);
+    super(name, title); //*  This is required when a class extends
     this.runtime = runtime;
   }
 
