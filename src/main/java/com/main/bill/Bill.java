@@ -52,15 +52,15 @@ public class Bill {
       double subTotal = item.getPrice() * item.getCount();
 
       formattedString +=
-        String.format("%-25s %f$ \n", item.getName() + ":", subTotal);
+        String.format("%-25s %.2f$ \n", item.getName() + ":", subTotal);
 
       total += subTotal;
     }
 
     total += this.tip;
 
-    formattedString += String.format("%-25s %f$ \n", "Tip:", this.tip);
-    formattedString += String.format("%-25s %f$", "Total:", total);
+    formattedString += String.format("%-25s %.2f$ \n", "Tip:", this.tip);
+    formattedString += String.format("%-25s %.2f$", "Total:", total);
 
     return formattedString;
   }
