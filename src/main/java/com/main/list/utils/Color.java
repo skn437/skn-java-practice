@@ -4,7 +4,7 @@ import com.main.list.utils.ColorMap.ColorName;
 
 public class Color {
 
-  public static String green(String text) {
+  public static String greenBold(String text) {
     return String.format(
       "%s%s%s",
       ColorMap.getColor(ColorName.GREEN),

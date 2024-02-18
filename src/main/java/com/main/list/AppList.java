@@ -1,6 +1,7 @@
 package com.main.list;
 
 import com.main.list.utils.Color;
+import com.main.list.utils.MethodReference;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,12 +28,18 @@ public class AppList {
 
     //anotherList.add("So"); //* This won't work
 
-    anotherList.forEach(value -> {
-      System.out.printf("Another List Value: %s \n", value);
-    });
+    // anotherList.forEach(value -> {
+    //   System.out.printf("Another List Value: %s \n", value);
+    // });
+
+    anotherList.forEach(MethodReference::new);
 
     String name = "SKN";
-    System.out.printf(Color.green(String.format("Name: %s \n", name)));
+    System.out.printf(
+      Color.greenBold(
+        String.format("Name: %s, This is a green color test! \n", name)
+      )
+    );
     System.out.printf("Hello %s \n", name);
   }
 }

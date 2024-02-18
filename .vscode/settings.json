@@ -1,3 +1,8 @@
 {
-	"java.configuration.updateBuildConfiguration": "interactive"
+	"java.configuration.updateBuildConfiguration": "interactive",
+	"material-icon-theme.files.associations": {
+		"MyHeart.java": "../../custom-icons/java-annotation",
+		"Skn.java": "../../custom-icons/java-type",
+		"Bill.java": "../../custom-icons/java-type"
+	}
 }
